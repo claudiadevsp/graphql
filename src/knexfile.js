@@ -1,12 +1,12 @@
-const { password } = require('./.env')
+const { host, database, user, password } = require('./.env')
 
 module.exports = {
 
     client: 'mysql',
     connection: {
-      host : 'training_proj.mysql.dbaas.com.br',
-      database: 'training_proj',
-      user:     'training_proj',
+      host : host,
+      database: database,
+      user:     user,
       password: password
     },
     pool: {
@@ -15,5 +15,5 @@ module.exports = {
     },
     migrations: {
       tableName: 'knex_migrations'
-    }
+    }    
 };
