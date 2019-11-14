@@ -29,4 +29,3 @@ module.exports = makeExecutableSchema({
         typeDefs: typeDef, 
         resolvers
 })
-
