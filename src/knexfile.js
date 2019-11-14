@@ -1,8 +1,8 @@
-const { host, database, user, password } = require('./.env')
+const { client, host, database, user, password } = require('./.env')
 
 module.exports = {
 
-    client: 'mysql',
+    client: client,
     connection: {
       host : host,
       database: database,
